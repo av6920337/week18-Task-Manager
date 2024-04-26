@@ -90,3 +90,20 @@ ul li span{
 ul li span:hover{
     background:#edeef0;
 }
+.container2{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.btnDelete{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background:linear-gradient(135deg,#ff5945,#4e085f) ;
+    color:#fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    display: flex;
+    align-items: end;
+}

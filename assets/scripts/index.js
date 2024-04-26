@@ -31,6 +31,16 @@ listContainer.addEventListener('click',function(e){
     }
 });
 
+document.getElementById('buttonDelete').addEventListener('click',function(){
+        const listItems=listContainer.querySelectorAll('li');
+        for(let i=0; i<listItems.length; i++){
+            if(listItems[i].classList.contains('checked')){
+                listContainer.removeChild(listItems[i]);
+                saveData();
+            }
+        }
+    });
+
 function saveData(){
     localStorage.setItem('data',listContainer.innerHTML);
 }//Эта функция используется для сохранения данных в локальное хранилище (localStorage). 
